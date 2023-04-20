@@ -15,10 +15,12 @@ import io.ktor.util.*
 val server = DrawingServer()
 val gson = Gson()
 
-fun main() {
+/*fun main() {
     embeddedServer(Netty, port = 8010, host = "192.168.68.105", module = Application::module)
         .start(wait = true)
-}
+}*/
+
+fun main(args: Array<String>): Unit = EngineMain.main(args)
 
 fun Application.module() {
 
